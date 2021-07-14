@@ -3,9 +3,14 @@
    font-weight: 600;
    font-size: 2vh;
 }
+.stages-container {
+      width: 100%;
+      display: flex;
+}
 .stages{
-      display:flex;
       justify-content: space-between;
+      padding: 37px;
+      width: 30%;
 }
 .stage-item{
       height: 400px;
@@ -15,16 +20,19 @@
       font-size: 2vh;
 }
 
-.stage-item .btn-idea{
-   display: block;
-   margin-top: 3px;
-   cursor: pointer;
-   background-color: white;
-   border-radius: 3px;
-   font-family: Verdana;
-   font-size: 2vh;
+.btn-idea{
+      min-height: 30px;
+      width: 100%;
+      overflow-wrap: break-word;
+      display: inline-block;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 3px;
+      font-family: Verdana;
+      font-size: 18px;
+      margin: 20px 5px 10px;
 }
 
-.stage-item .btn-idea:hover{
+.btn-idea:hover{
   background-color: yellow;
 }
