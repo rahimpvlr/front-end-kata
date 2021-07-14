@@ -18,8 +18,10 @@ export class AssemblyLineComponent implements OnInit {
   }
 
   onInputKeyEnter(event) {
-    this.stageItems[0].push(event.target.value);
-    event.target.value = '';
+    if (event.target.value) {
+      this.stageItems[0].push(event.target.value);
+      event.target.value = '';
+    }
   }
 
   onRightClick(event, stageI, itemI) {
